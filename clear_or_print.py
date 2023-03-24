@@ -12,7 +12,7 @@ class Window(QtWidgets.QWidget):
 
     def init_ui(self):
 
-        #define a label
+        #define a line for text
         self.text_field = QtWidgets.QLineEdit()
         #define a 'clear' button
         self.clear = QtWidgets.QPushButton("Clear")
@@ -52,9 +52,10 @@ class Window(QtWidgets.QWidget):
             #else print the text in the label
             print(self.text_field.text())
 
-
+#create an application
 app = QtWidgets.QApplication(sys.argv)
 
 window = Window()
 
+#loop the application
 sys.exit(app.exec_())
