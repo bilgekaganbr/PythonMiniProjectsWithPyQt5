@@ -51,9 +51,11 @@ class Window(QtWidgets.QWidget):
         #update the text in the label
         self.text_field.setText("Clicked on me " + str(self.count) + " times...")
 
+#create an application
 app = QtWidgets.QApplication(sys.argv)
 
 window = Window()
 
+#loop the application
 sys.exit(app.exec_())
 
